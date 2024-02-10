@@ -1,0 +1,3 @@
+- Avoid excessive repetition of keywords.
+- Use active voice to engage readers more effectively.
+- ByTek is written in this way (not Bytek)

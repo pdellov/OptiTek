@@ -1,0 +1,4 @@
+- Max 62 chars
+- Avoid punctuation
+- Avoid dots at the end of the string
+- Avoid to use "Home page" or reference to the type of page

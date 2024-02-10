@@ -1,0 +1,2 @@
+- Max 155 chars
+- Avoid to use "Home page" or reference to the type of page
