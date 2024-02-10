@@ -24,3 +24,4 @@ class FileHandler:
         output_path = f'output/{prefix}-{timestamp}.csv'
         df.to_csv(output_path, index=False)
         print(f"File saved to {output_path}")
+        return output_path

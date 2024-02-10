@@ -1,15 +1,12 @@
 import openai
-from configparser import ConfigParser
 
 class SEOOptimizer:
-    def __init__(self, language, writing_rules,title_rules,description_rules):
+    def __init__(self, language, writing_rules,title_rules,description_rules,openai_api_key):
         self.language = language
         self.writing_rules = writing_rules
         self.title_rules = title_rules
         self.description_rules = description_rules
-        config = ConfigParser()
-        config.read('config.ini')
-        self.openai_api_key = config['DEFAULT']['openai_api_key']
+        self.openai_api_key = openai_api_key
     
     def optimize_text(self, text, type_text, keywords=None):
         type_text
@@ -39,7 +36,7 @@ class SEOOptimizer:
             api_key=self.openai_api_key
         )
         optimized_text= response.choices[0].message['content']
-        optimized_text = optimized_text.strip('"\'')
+        optimized_text = optimized_text.strip('"\'').strip('"\'').strip('"\'').strip('"\'').strip('"\'')
 
         return optimized_text
     
